@@ -30,39 +30,39 @@ try {
 
 It will return an array describing the pictures like so:
 
-```
+```json
 [
     {
-        'caption': 'Lorem ipsum dolor sit amet, consectetur ....',  
-        'src': 'https://instagram.ffln3....', 
-        'thumbnails': {
-            '150x150': 'https://instagram.ffln....', 
-            '240x240': 'https://instagram.ffln....', 
-            '320x320': 'https://instagram.ffln....', 
-            '480x480': 'https://instagram.ffln....', 
-            '640x640': 'https://instagram.ffln....'
+        "caption": "Lorem ipsum dolor sit amet, consectetur ....",  
+        "src": "https://instagram.ffln3....", 
+        "thumbnails": {
+            "150x150": "https://instagram.ffln....", 
+            "240x240": "https://instagram.ffln....", 
+            "320x320": "https://instagram.ffln....", 
+            "480x480": "https://instagram.ffln....", 
+            "640x640": "https://instagram.ffln...."
         }
     }, 
     {
-        'caption': 'Sed ut perspiciatis unde omnis iste ....', 
-        'src': 'https://instagram.ffln3....', 
-        'thumbnails': {
-            '150x150': 'https://instagram.ffln....', 
-            '240x240': 'https://instagram.ffln....', 
-            '320x320': 'https://instagram.ffln....', 
-            '480x480': 'https://instagram.ffln....', 
-            '640x640': 'https://instagram.ffln....'
+        "caption": "Sed ut perspiciatis unde omnis iste ....", 
+        "src": "https://instagram.ffln3....", 
+        "thumbnails": {
+            "150x150": "https://instagram.ffln....", 
+            "240x240": "https://instagram.ffln....", 
+            "320x320": "https://instagram.ffln....", 
+            "480x480": "https://instagram.ffln....", 
+            "640x640": "https://instagram.ffln...."
         }
     },
     {
-        'caption': 'At vero eos et accusamus et iusto odio ....', 
-        'src': 'https://instagram.ffln3....', 
-        'thumbnails': {
-            '150x150': 'https://instagram.ffln....', 
-            '240x240': 'https://instagram.ffln....', 
-            '320x320': 'https://instagram.ffln....', 
-            '480x480': 'https://instagram.ffln....', 
-            '640x640': 'https://instagram.ffln....'
+        "caption": "At vero eos et accusamus et iusto odio ....", 
+        "src": "https://instagram.ffln3....", 
+        "thumbnails": {
+            "150x150": "https://instagram.ffln....", 
+            "240x240": "https://instagram.ffln....", 
+            "320x320": "https://instagram.ffln....", 
+            "480x480": "https://instagram.ffln....", 
+            "640x640": "https://instagram.ffln...."
         }
     }
 ]
