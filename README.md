@@ -83,7 +83,7 @@ $pictures    = Instagram::unique($pictures);
 Use composer
 
 ```cmd
-composer require adinan-cenci/climatempo-api
+composer require adinan-cenci/scraping-instagram
 ```
 
 ## License
