@@ -1,22 +1,19 @@
 {
     "name": "adinan-cenci/scraping-instagram", 
-    "description": "Get instagram pictures without api credentials.", 
+    "description": "Get instagram pictures, no api token needed.", 
     "type": "library", 
-    "keywords": ["scraping"], 
+    "keywords": ["scraping", "library"], 
     "license": "MIT",
-    "version": "0.1.0", 
+    "version": "1.0.0", 
     "authors": [
         {
             "name": "Adinan Cenci", 
-            "email": "adinancenci@gmail.com", 
+            "email": "adinancenci@protonmail.com", 
             "role": "developer"
         }
     ], 
     "require": {
         "php": ">=5.3"
-    }, 
-    "require-dev": {
-        "phpunit/phpunit": "^6.2"
     }, 
     "autoload": {
         "psr-4": {
