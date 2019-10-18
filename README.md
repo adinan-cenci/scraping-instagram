@@ -30,7 +30,7 @@ try {
 
 It will return an array describing the pictures like so:
 
-```json
+```
 [
     {
         'caption': 'Lorem ipsum dolor sit amet, consectetur ....',  
