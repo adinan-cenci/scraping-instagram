@@ -17,8 +17,8 @@ class Request
         $options = array(
             CURLOPT_URL             => "https://www.instagram.com/$this->username/", 
             CURLOPT_SSL_VERIFYPEER  => false, // don't verify certificate
-            CURLOPT_RETURNTRANSFER  => true,  // return content
             CURLOPT_FOLLOWLOCATION  => true,  // follow redirects
+            CURLOPT_RETURNTRANSFER  => true,  // return content
             CURLOPT_HEADER          => true   // return headers
         );
 

@@ -55,6 +55,35 @@ class Instagram
     /** remove duplicates */
     public static function unique($pictures) 
     {
-        return array_map('unserialize', array_unique(array_map('serialize', $pictures)));
+        foreach ($pictures as $key => $pic) {
+            self::removeDuplicate($pictures, $key, $pic);
+        }
+
+        return $pictures;
+    }
+
+    protected static function removeDuplicate(&$pictures, $key, $pic) 
+    {
+        foreach ($pictures as $k => $p) {
+
+            if ($k < $key) {
+                return;
+            }
+            
+            if ($key == $k) {
+                continue;
+            }
+
+            if (self::getPath($pic['src']) == self::getPath($p['src'])) {
+                unset($pictures[$k]);
+                return;
+            }
+        }
+    }
+
+    protected static function getPath($url) 
+    {
+        $array = parse_url($url);
+        return $array['path'];
     }
 }
