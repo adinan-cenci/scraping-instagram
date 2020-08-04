@@ -8,6 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+## [1.0.3] - 2020-08-04
+### Fixed
+- Instagram class, request headers were being passed to the 
+  Parser object instead of the Request object. Ops.
+
+
+
+
+
 ## [1.0.2] - 2020-07-27
 ### Changed
 - Refactored the code to respect the single responsability principle. API remains the same.

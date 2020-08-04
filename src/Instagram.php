@@ -26,8 +26,8 @@ class Instagram
         }
 
         // try again, now with some headers
-        $request  = new Request( $this->username );
-        $parser   = new Parser( $request->request(), $this->generateRequestHeaders() );
+        $request  = new Request( $this->username, $this->generateRequestHeaders() );
+        $parser   = new Parser( $request->request() );
 
         try {
             $images = $parser->parse();
