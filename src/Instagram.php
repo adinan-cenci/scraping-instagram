@@ -12,7 +12,20 @@ class Instagram
 
     public function fetch() 
     {
-        $request  = new Request( $this->username );
+        $headers  = array(
+            "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", 
+            "Accept-Encoding: gzip, deflate, br", 
+            "Accept-Language: en-US,en;q=0.5", 
+            "Cache-Control: max-age=0", 
+            "Cookie: PHPSESSID=u9p7kv58gppcqub632gleges93", 
+            "Dnt: 1", 
+            "Host: instagram.com", 
+            "Te: trailers", 
+            "Upgrade-Insecure-Requests: 1", 
+            "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0", 
+            "X-Https: 1", 
+        );
+        $request  = new Request( "https://www.instagram.com/$this->username/", $headers );
         $parser   = new Parser( $request->request() );
         
         try {
@@ -26,7 +39,7 @@ class Instagram
         }
 
         // try again, now with some headers
-        $request  = new Request( $this->username, $this->generateRequestHeaders() );
+        $request  = new Request( "https://www.instagram.com/$this->username/", $this->generateRequestHeaders() );
         $parser   = new Parser( $request->request() );
 
         try {

@@ -3,19 +3,19 @@ namespace AdinanCenci\ScrapingInstagram;
 
 class Request 
 {
-    protected $username = null;
+    protected $url      = null;
     protected $headers  = null;
 
-    public function __construct($username, $headers = null) 
+    public function __construct($url, $headers = null) 
     {
-        $this->username = $username;
+        $this->url      = $url;
         $this->headers  = $headers;
     }
     
     public function request() 
     {
         $options = array(
-            CURLOPT_URL             => "https://www.instagram.com/$this->username/", 
+            CURLOPT_URL             => $this->url, 
             CURLOPT_SSL_VERIFYPEER  => false, // don't verify certificate
             CURLOPT_FOLLOWLOCATION  => true,  // follow redirects
             CURLOPT_RETURNTRANSFER  => true,  // return content
