@@ -1,3 +1,7 @@
+# Notice: Repository archieved
+Instagram is going to such extent to protect their platform as to make scraping it a great endeavour and defeating the purpose of this library, meant to be of simple use.  
+I am sorry, but out there are projects better suited for it. 
+
 # Instagram scraping
 
 This is a PHP library to scrap pictures of profile pages on Instagram. No api token needed.
